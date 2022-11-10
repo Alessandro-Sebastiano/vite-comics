@@ -1,9 +1,9 @@
 <template>
-    <div class="card">
+    <div class="card" v-for="(el, index) in cards">
         <div class="card-image">
-            <img :src="imageUrl" alt="">
+            <img :src="cards[index].imageUrl" :alt="cards[index].cardText">
         </div>
-        <span>{{ cardText }}</span>
+        <span>{{ cards[index].cardText }}</span>
     </div>
 </template>
 
@@ -17,10 +17,36 @@ export default {
 
     data() {
         return {
-            imageUrl: './src/assets/img/buy-comics-digital-comics.png',
-            cardText: 'DIGITAL COMICS',
+            cards: [
+
+                {
+                    imageUrl: './src/assets/img/buy-comics-digital-comics.png',
+                    cardText: 'Digital Comics',
+                },
+
+                {
+                    imageUrl: './src/assets/img/buy-comics-merchandise.png',
+                    cardText: 'Dc merchandise',
+                },
+
+                {
+                    imageUrl: './src/assets/img/buy-comics-shop-locator.png',
+                    cardText: 'Subscription',
+                },
+
+                {
+                    imageUrl: './src/assets/img/buy-comics-subscriptions.png',
+                    cardText: 'Comic shop locator',
+                },
+
+                {
+                    imageUrl: './src/assets/img/buy-dc-power-visa.svg',
+                    cardText: 'Dc power visa',
+                },
+
+            ],
         }
-    }
+    },
 
 }
 </script>
@@ -31,19 +57,23 @@ export default {
 .card {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     margin: 0px 10px;
+    cursor: pointer;
+    max-height: 65px;
 
 
     span {
         font-weight: 300;
         color: $ligth;
+        margin-left: 10px;
+        text-transform: uppercase;
     }
 }
 
 
 .card-image {
-    width: 60px;
-    margin-right: 8px;
+    width: 55px;
 
     img {
         width: 100%;

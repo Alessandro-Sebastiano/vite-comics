@@ -2,10 +2,6 @@
     <div class="cards-box">
         <div class="component-container">
             <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
         </div>
     </div>
 </template>
@@ -32,7 +28,7 @@ export default {
 
 .cards-box {
     background-color: $blue;
-    padding: 24px 0;
+    padding: 34px 0;
 }
 
 .component-container {
