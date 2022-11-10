@@ -6,11 +6,8 @@
             </div>
             <div class="follow">
                 <span>Follow us</span>
-                <a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a>
-                <a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a>
-                <a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube"></a>
-                <a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a>
-                <a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope"></a>
+                <a href="#" v-for="(icon, index) in footerIcons"><img :src="footerIcons[index].imageUrl"
+                        :alt="footerIcons[index].alt"></a>
             </div>
         </div>
     </div>
@@ -20,6 +17,43 @@
 export default {
 
     name: 'FooterComponent',
+
+    data() {
+
+        return {
+
+            footerIcons: [
+
+                {
+                    imageUrl: './src/assets/img/footer-facebook.png',
+                    alt: 'facebook',
+                },
+
+                {
+                    imageUrl: './src/assets/img/footer-twitter.png',
+                    alt: 'twitter',
+                },
+
+                {
+                    imageUrl: './src/assets/img/footer-youtube.png',
+                    alt: 'youtube',
+                },
+
+                {
+                    imageUrl: './src/assets/img/footer-pinterest.png',
+                    alt: 'pinterest',
+                },
+
+                {
+                    imageUrl: './src/assets/img/footer-periscope.png',
+                    alt: 'periscope',
+                },
+
+            ],
+
+        }
+
+    }
 
 }
 </script>
