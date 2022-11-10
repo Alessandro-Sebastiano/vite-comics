@@ -8,9 +8,12 @@
 
 <script>
 
-name: 'ContentComponent';
+
 
 export default {
+
+    name: 'ContentComponent',
+
     data() {
         return {
             contenTitle: '--> Content goes here <--'

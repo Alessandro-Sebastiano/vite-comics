@@ -25,10 +25,8 @@
 
 <script>
 
-name: 'HeaderComponent';
-
 export default {
-
+    name: 'HeaderComponent',
 }
 </script>
 
