@@ -68,12 +68,14 @@ export default {
         color: $ligth;
         margin-left: 10px;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 }
 
 
 .card-image {
-    width: 55px;
+    max-width: 48px;
+    min-width: 28px;
 
     img {
         width: 100%;
