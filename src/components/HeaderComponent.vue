@@ -126,6 +126,7 @@ export default {
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $dark;
+                border-bottom: 3px solid $blue;
                 padding: 10px 0;
 
 
@@ -143,7 +144,6 @@ export default {
                     position: relative;
                     bottom: -10px;
                     float: right;
-                    transition: all 0.4s ease;
                 }
             }
 
@@ -152,10 +152,10 @@ export default {
 
         .active {
             color: $blue;
-            border-bottom: 3px solid $blue;
 
             &::after {
-                width: 0;
+                width: 1%;
+                transition: all 0.4s ease;
             }
         }
 
