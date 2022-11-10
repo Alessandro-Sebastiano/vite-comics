@@ -111,23 +111,34 @@ export default {
 }
 
 
+.header-logo {
+    margin-right: 84px;
+}
+
 .menu-list {
+
+    min-width: 452px;
 
     ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
 
 
         li {
-            padding: 4px 16px;
+            padding: 0px 16px;
+            margin: 5px;
 
             a {
+                display: block;
+                width: 100%;
+                height: 34px;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $dark;
                 border-bottom: 3px solid $blue;
-                padding: 10px 0;
+                position: relative;
 
 
                 &:hover {
@@ -140,10 +151,10 @@ export default {
                     display: block;
                     width: 100%;
                     height: 3px;
+                    position: absolute;
+                    right: 0;
+                    bottom: -3px;
                     background-color: $ligth;
-                    position: relative;
-                    bottom: -10px;
-                    float: right;
                 }
             }
 
@@ -157,6 +168,7 @@ export default {
                 width: 1%;
                 transition: all 0.4s ease;
             }
+
         }
 
     }
