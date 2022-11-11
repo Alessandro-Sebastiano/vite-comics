@@ -29,12 +29,12 @@ export default {
 
                 {
                     itemText: 'Characters',
-                    itemActive: true,
+                    itemActive: false,
                 },
 
                 {
                     itemText: 'Comics',
-                    itemActive: false,
+                    itemActive: true,
                 },
 
                 {
