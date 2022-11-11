@@ -1,5 +1,6 @@
 <template>
     <HeaderComponent />
+    <JumbotronComponent />
     <ContentComponent />
     <CardsBox />
     <LinksComponent />
@@ -12,7 +13,7 @@ import ContentComponent from './components/ContentComponent.vue';
 import CardsBox from './components/CardsBox.vue';
 import LinksComponent from './components/LinksComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
-
+import JumbotronComponent from './components/JumbotronComponent.vue';
 
 export default {
     components: {
@@ -21,6 +22,7 @@ export default {
         CardsBox,
         LinksComponent,
         FooterComponent,
+        JumbotronComponent,
     }
 }
 </script>
