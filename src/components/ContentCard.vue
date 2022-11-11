@@ -23,6 +23,7 @@ export default {
     width: calc((100% / 6) - 32px);
     margin: 8px 16px;
     min-width: 54px;
+    cursor: pointer;
 
 
     span {
