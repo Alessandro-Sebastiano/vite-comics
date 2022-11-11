@@ -1,24 +1,31 @@
 <template>
     <div class="content">
         <div class="component-container">
-            <h2>{{ contenTitle }}</h2>
+            <ContentCard v-for="(item, index) in cards" :image="item.thumb" :text="item.series" />
         </div>
     </div>
 </template>
 
 <script>
-
-
+import ContentCard from './ContentCard.vue';
+import json from '../data/dc-comics.json';
 
 export default {
-
     name: 'ContentComponent',
+    components: {
+        ContentCard,
+    },
 
     data() {
         return {
-            contenTitle: '--> Content goes here <--'
+            cards: json,
         }
+    },
+
+    mounted() {
+        console.log(this.cards);
     }
+
 }
 </script>
 
@@ -29,11 +36,15 @@ export default {
 
 .content {
     background-color: $dark;
-    padding: 26px 0px;
+    padding: 42px 0px;
 }
 
 .component-container {
     @include general-container;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     h2 {
         color: $ligth;
