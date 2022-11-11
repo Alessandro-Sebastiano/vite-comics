@@ -32,6 +32,7 @@ export default {
         margin-top: 8px;
         text-transform: uppercase;
         color: $ligth;
+        font-weight: 200;
     }
 }
 
