@@ -25,27 +25,27 @@ export default {
             footerIcons: [
 
                 {
-                    imageUrl: './src/assets/img/footer-facebook.png',
+                    imageUrl: '/images/footer-facebook.png',
                     alt: 'facebook',
                 },
 
                 {
-                    imageUrl: './src/assets/img/footer-twitter.png',
+                    imageUrl: '/images/footer-twitter.png',
                     alt: 'twitter',
                 },
 
                 {
-                    imageUrl: './src/assets/img/footer-youtube.png',
+                    imageUrl: '/images/footer-youtube.png',
                     alt: 'youtube',
                 },
 
                 {
-                    imageUrl: './src/assets/img/footer-pinterest.png',
+                    imageUrl: '/images/footer-pinterest.png',
                     alt: 'pinterest',
                 },
 
                 {
-                    imageUrl: './src/assets/img/footer-periscope.png',
+                    imageUrl: '/images/footer-periscope.png',
                     alt: 'periscope',
                 },
 

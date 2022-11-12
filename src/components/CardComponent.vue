@@ -20,27 +20,27 @@ export default {
             cards: [
 
                 {
-                    imageUrl: './src/assets/img/buy-comics-digital-comics.png',
+                    imageUrl: '/images/buy-comics-digital-comics.png',
                     cardText: 'Digital Comics',
                 },
 
                 {
-                    imageUrl: './src/assets/img/buy-comics-merchandise.png',
+                    imageUrl: '/images/buy-comics-merchandise.png',
                     cardText: 'Dc merchandise',
                 },
 
                 {
-                    imageUrl: './src/assets/img/buy-comics-shop-locator.png',
+                    imageUrl: '/images/buy-comics-shop-locator.png',
                     cardText: 'Subscription',
                 },
 
                 {
-                    imageUrl: './src/assets/img/buy-comics-subscriptions.png',
+                    imageUrl: '/images/buy-comics-subscriptions.png',
                     cardText: 'Comic shop locator',
                 },
 
                 {
-                    imageUrl: './src/assets/img/buy-dc-power-visa.svg',
+                    imageUrl: '/images/buy-dc-power-visa.svg',
                     cardText: 'Dc power visa',
                 },
 
